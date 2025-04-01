@@ -1,0 +1,58 @@
+{
+  "name": "@elizaos/plugin-filecoin",
+  "version": "1.0.0",
+  "description": "Filecoin Plugin for ElizaOS",
+  "private": true,
+  "author": "Ahead Technologies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhead12/elizaos-plugins/plugin-filecoin"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "target",
+    "filecoin-rs/pkg" 
+  ],
+  "scripts": {
+  "start": "npx @elizaos/cli start",
+  "test-with-cli": "cd ../cli && bun run build && cd ../plugin-starter && elizaos test",
+  "dev": "npx @elizaos/cli dev",
+  "build": "npm run build:wasm && tsup src",
+  "build:wasm": "cd filecoin-rs && wasm-pack build --target nodejs --out-dir pkg --release && cd ..",
+  "lint": "prettier --write ./src",
+  "test": "npx @elizaos/cli test",
+  "publish": "npx @elizaos/cli plugin publish",
+  "format": "prettier --write ./src",
+  "format:check": "prettier --check ./src"
+},
+  "dependencies": {
+    "@elizaos/cli": "1.0.0-beta.7",
+    "@elizaos/core": "1.0.0-beta.7",
+    "@storacha/client":"1.2.4",
+    "sequelize": "^6.0.0", 
+    "dotenv": "^16.4.5",
+    "zod": "3.24.2",
+    "ts-retry-promise": "^0.8.1",
+    "multiformats":"13.3.2",
+    "@types/node":"22.13.14"
+  },
+  "devDependencies": {
+    "tsup": "8.4.0",
+    "prettier": "3.5.3",
+    "wasm-pack": "^0.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
