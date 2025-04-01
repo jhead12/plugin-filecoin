@@ -4,7 +4,7 @@ async function fetchFilecoinDataVectors(): Promise<any[]> {
     try {
         await FilecoinRsBindings.initialize();
         const backupResult = await FilecoinRsBindings.backupDataLocal({
-            path: '/path/to/backup',
+            path: '../backup',
             encrypted: true
         });
         
