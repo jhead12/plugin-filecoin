@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": "../../",
     "lib": ["ES2021", "DOM"],
-    "target": "ES6", // Use a stable target instead of ESNext
+    "target": "ES2022", // Use a stable target instead of ESNext
     "module": "CommonJS",
     "strict": true, // Enable strict mode for better type safety
     "esModuleInterop": true,
