@@ -118,8 +118,8 @@ ton_nft_metadata/*
 
 ton_nft_images/
 ton_nft_images/*
-packages/plugin-filecoin/ref-fvm
-packages/plugin-filecoin/filecoin-rs/target/debug/
+# packages/plugin-filecoin/ref-fvm
+packages/plugin-filecoin/filecoin-rs/target/debug/.*
 
 node_modules
 /out
