@@ -171,6 +171,22 @@ MIT License (or specify your license).
 This should cover all the steps needed to set up the `generate-pages.sh` script and ensure that all environment variables are correctly configured. Let me know if you need further adjustments!
 
 
+# Winning Criteria
+
+3 Keys to a Winning Submission
+A Stellar Codebase
+Make it publicly accessible with clean organization that impresses judges.
+Create an outstanding README that makes your project easy to understand.
+Highlight sponsor tech integration clearly to show you've met the challenge criteria.
+A Compelling Video Demo
+Keep it concise (under 3 minutes) to respect judges' time.
+Tell a story that shows both the problem you're solving and a clear demonstration of how your solution works.
+Extra Elements That Impress Judges
+Visual Presentation: A polished slide deck that communicates your vision, technical implementation, and potential impact.
+Interactive Demo: A live version judges can try themselves, making your project memorable.
+Technical Documentation: Showing the depth of your thinking and attention to detail.
+
+
 
 
 

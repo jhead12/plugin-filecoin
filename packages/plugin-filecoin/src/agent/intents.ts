@@ -1,4 +1,4 @@
-import { FilecoinClient } from '../../filecoin-rs/pkg';
+import { FilecoinClient } from '../../filecoin-rs/pkg/filecoin_rs';
 
 export class AgentIntentHandler {
     private client: FilecoinClient;

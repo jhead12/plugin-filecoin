@@ -43,6 +43,7 @@
     "@storacha/client":"1.2.4",
     "@web3-storage/w3up-client":"17.2.0",
     "@storacha/elizaos-plugin":"1.2.0",
+    "@elizaos/plugin-bootstrap": "workspace:*",
     "sequelize": "^6.0.0", 
     "dotenv": "^16.4.5",
     "axios":"1.8.4",
