@@ -101,9 +101,9 @@ importers:
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
-      dart-tools-ts:
-        specifier: ^0.2.1
-        version: 0.2.1
+      dart-tools:
+        specifier: ^0.3.2
+        version: 0.3.2
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -6367,10 +6367,9 @@ packages:
     resolution: {integrity: sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==}
     engines: {node: '>=8'}
 
-  dart-tools-ts@0.2.1:
-    resolution: {integrity: sha512-A6CBEDMebvCjBJz6AA4ZthmpMVxdbWHzmIjaTL7cRTjp7FHdoPQDgAMqei/6E1jKYupRnq+ggRXuuDALol4DRA==}
+  dart-tools@0.3.2:
+    resolution: {integrity: sha512-sbqBekN29+o92kIzVDVx87O5Wc1h4UJBfv07Mb4GytKkUNpUF4z97Dqhy404oVcWevRHkxaVagRMEGvf/6IEXA==}
     engines: {node: '>=18.0.0'}
-    deprecated: This package is deprecated. Please use 'dart-tools' instead.
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -20729,7 +20728,7 @@ snapshots:
 
   dargs@7.0.0: {}
 
-  dart-tools-ts@0.2.1:
+  dart-tools@0.3.2:
     dependencies:
       axios: 1.8.4
     transitivePeerDependencies:

@@ -1,61 +1,51 @@
-// src/index.ts
 import { initialize, run, backupDataLocal, filecoinRsRestoreFunction } from './filecoin-rs-bindings';
 import fs from 'fs/promises';
 import path from 'path';
 import { encrypt, decrypt } from './encryption';
 import { connectToFilecoin, checkFilecoinConnection } from './database/filecoin';
 import { StorachaStorage } from './database/storacha-storage';
-// import { Web3StorageProvider } from './database/web3-storage';
 import { FilecoinDatabaseAdapter } from './database/filecoin-adapter';
 import { v4 as uuidv4 } from 'uuid';
-import { AgentRuntime } from '@elizaos/core'; // Adjust import based on actual path
-import logger from './logger'; // Import the logger
+import { AgentRuntime, Character, ModelProviderName } from '@elizaos/core';
+import logger from './logger';
 import 'dotenv/config';
+
+// Define UUID type for clarity
+type UUID = `${string}-${string}-${string}-${string}-${string}`;
 
 // Modular storage setup
 function getStorageProvider(): StorachaStorage {
     const storageType = process.env.STORAGE_TYPE || 'storacha';
-    // if (storageType === 'web3.storage') {
-    //     const token = process.env.WEB3_STORAGE_TOKEN;
-    //     if (!token) throw new Error('WEB3_STORAGE_TOKEN is required for web3.storage');
-    //     return new Web3StorageProvider(token);
-    // }
     return new StorachaStorage();
 }
-let roomId: string;
+
 // Initialize AgentRuntime with FilecoinDatabaseAdapter
 async function initializeAgentRuntime(db: FilecoinDatabaseAdapter): Promise<AgentRuntime> {
-    const character = {
-        id: 'agent',
+    const character: Character = {
+        id: uuidv4() as UUID,
         name: 'FilecoinAgent',
         username: 'filecoin',
-        bio: 'An agent managing Filecoin storage',
-        settings: {},
+        modelProvider: ModelProviderName.OLLAMA,
+        bio: 'An agent managing Filecoin storage and backups',
+        lore: ['Default lore about Filecoin integration'],
+        messageExamples: [],
+        postExamples: [],
+        topics: ['filecoin', 'storage', 'backup'],
+        adjectives: ['helpful', 'reliable'],
         plugins: [],
-        lore: 'Default lore', // Add default value
-        messageExamples: [], // Add default value
-        postExamples: [], // Add default value
-        topics: [], // Add default value
-        // Add any other missing properties with default values
+        style: {
+            all: ['professional', 'concise'],
+            chat: ['friendly'],
+            post: ['informative'],
+        },
+        settings: {},
     };
+
     const runtime = new AgentRuntime({
         token: process.env.AGENT_TOKEN || 'default-token',
-        serverUrl: 'http://localhost:7998',
-        character: {
-            conversationLength: 50,
-            agentId: uuidv4(),
-            character: character,
-            token: process.env.AGENT_TOKEN || 'default-token',
-            logging: true,
-            actions: [], // Optional custom actions
-            evaluators: [], // Optional custom evaluators
-            plugins: [],
-            providers: [],
-            services: [],// Map of service name to service instance
-            managers: [], // Map of table name to memory manager
-            databaseAdapter: db,// The database adapter used for interacting with the database
-            // Add any other missing properties with default values
-    }
+        modelProvider: ModelProviderName.OLLAMA,
+        character,
+        databaseAdapter: db,
     });
 
     await runtime.initialize();
@@ -77,7 +67,7 @@ async function ensureDirectoryExists(dirPath: string): Promise<void> {
 
 async function main(): Promise<void> {
     // Validate environment variables
-    const requiredEnvVars = ['STORACHA_API_TOKEN', 'FILECOIN_RPC_URL', 'DECRYPTION_KEY'];
+    const requiredEnvVars = ['STORACHA_API_TOKEN', 'FILECOIN_RPC_URL', 'ENCRYPTION_KEY'];
     const missingVars = requiredEnvVars.filter(varName => !process.env[varName]);
     if (missingVars.length > 0) {
         throw new Error(`Missing required environment variables: ${missingVars.join(', ')}`);
@@ -112,16 +102,16 @@ async function main(): Promise<void> {
 
     // Example: Backup and encrypt data
     const dataToBackup = process.env.DATA_TO_BACKUP || 'Default sensitive data';
-    const encryptedData = encrypt(dataToBackup);
+    const encryptedData = Buffer.from(encrypt(dataToBackup)).toString('hex'); // Hex string for storage.upload
 
     // Check Filecoin connection
     const isConnected = await checkFilecoinConnection();
     logger.info('Is connected to Filecoin network?', isConnected);
 
-    // Upload to storage
+    // Upload to Storacha
     let storageDataId: string | undefined;
     try {
-        storageDataId = await storage.upload(encryptedData.toString());
+        storageDataId = await storage.upload(encryptedData); // Upload hex-encoded encrypted data
         logger.info('Data uploaded with ID:', storageDataId);
     } catch (error) {
         logger.error('Failed to upload data:', error);
@@ -130,10 +120,11 @@ async function main(): Promise<void> {
     // Download and verify
     if (storageDataId) {
         try {
-            const downloadedData = await storage.download(storageDataId);
-            const decryptedData = decrypt(downloadedData, Buffer.from(process.env.DECRYPTION_KEY!, 'hex'));
-            logger.info('Data downloaded:', Buffer.from(downloadedData).toString('utf8'));
-            logger.info('Decrypted data matches original?', Buffer.from(decryptedData).toString('utf8') === dataToBackup);
+            const downloadedData = await storage.download(storageDataId); // Uint8Array from Storacha
+            const decryptedData = decrypt(downloadedData); // Decrypt Uint8Array directly
+            const decryptedString = new TextDecoder().decode(decryptedData); // Convert to string for comparison
+            logger.info('Data downloaded (hex):', Buffer.from(downloadedData).toString('hex'));
+            logger.info('Decrypted data matches original?', decryptedString === dataToBackup);
         } catch (error) {
             logger.error('Failed to download or decrypt data:', error);
         }
@@ -141,17 +132,21 @@ async function main(): Promise<void> {
         logger.warn('Skipping download due to missing data ID');
     }
 
+    // Generate roomId and userId with proper typing
+    const roomId: UUID = uuidv4() as UUID;
+    const userId: UUID = uuidv4() as UUID;
+
     // Example: Use the adapter with UUIDs from AgentRuntime
     try {
         await db.createMemory(
             {
                 id: runtime.agentId,
                 agentId: runtime.agentId,
-                roomId: roomId, // Generate a UUID for roomId
-                content: { text: dataToBackup },
+                roomId,
+                content: { text: dataToBackup }, // Plaintext stored in memory
                 embedding: [],
-                createdAt: Date.now(), // Use createdAt instead of created
-                userId: []  // Generate a UUID for userId
+                createdAt: Date.now(),
+                userId,
             },
             'memories'
         );
@@ -165,7 +160,7 @@ async function main(): Promise<void> {
         const backupResult = await backupDataLocal({
             path: backupPath,
             encrypted: true,
-            data: dataToBackup
+            data: dataToBackup,
         });
         logger.info('Backup Success:', backupResult.success, 'Path:', backupResult.metadata.path);
     } catch (error) {
@@ -177,7 +172,7 @@ async function main(): Promise<void> {
         const restoreSuccess = await filecoinRsRestoreFunction({
             backupPath,
             destinationPath,
-            decryptionKey: process.env.DECRYPTION_KEY!
+            decryptionKey: process.env.ENCRYPTION_KEY!, // Hex string for WASM
         });
         logger.info(`Restored from ${backupPath} to ${destinationPath}: ${restoreSuccess}`);
     } catch (error) {
