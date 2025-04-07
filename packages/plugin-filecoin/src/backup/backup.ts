@@ -2,7 +2,7 @@
 
 import { BackupOptions, FilecoinBackupResult } from '../types';
 import { backupDataLocal as wasmBackupDataLocal } from '../filecoin-rs-bindings';
-import logger from '../logs/logger';
+import logger from '../logger';
 
 export async function backupFilecoin(options: BackupOptions): Promise<FilecoinBackupResult> {
     try {

@@ -2,7 +2,7 @@
 
 import { RestoreOptions } from './types';
 import { filecoinRsRestoreFunction as wasmRestoreFunction } from './filecoin-rs-bindings';
-import logger from './logs/logger';
+import logger from './logger';
 
 export async function restoreFilecoin(options: RestoreOptions): Promise<boolean> {
     try {

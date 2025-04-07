@@ -32,7 +32,7 @@ tweets/
 *.wav
 *.mp3
 
-logs/
+logs/* 
 
 test-report.json
 content_cache/

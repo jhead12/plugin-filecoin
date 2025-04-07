@@ -5,7 +5,7 @@ import { BackupMetadata as WasmBackupMetadata, FilecoinBackupResult as WasmFilec
 import { RestoreOptions, FilecoinBackupResult } from './types';
 import { decrypt, encrypt } from './encryption';
 import { downloadFromStoracha } from './database/storacha';
-import logger from './logs/logger';
+import logger from './logger';
 import * as dotenv from 'dotenv';
 
 dotenv.config();

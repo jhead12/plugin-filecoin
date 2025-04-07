@@ -9,7 +9,7 @@ import { StorachaStorage } from './database/storacha-storage';
 import { FilecoinDatabaseAdapter } from './database/filecoin-adapter';
 import { v4 as uuidv4 } from 'uuid';
 import { AgentRuntime } from '@elizaos/core'; // Adjust import based on actual path
-import logger from './logs/logger'; // Import the logger
+import logger from './logger'; // Import the logger
 import 'dotenv/config';
 
 // Modular storage setup
@@ -22,17 +22,16 @@ function getStorageProvider(): StorachaStorage {
     // }
     return new StorachaStorage();
 }
-
+let roomId: string;
 // Initialize AgentRuntime with FilecoinDatabaseAdapter
 async function initializeAgentRuntime(db: FilecoinDatabaseAdapter): Promise<AgentRuntime> {
     const character = {
-        id: 'agent-123',
+        id: 'agent',
         name: 'FilecoinAgent',
         username: 'filecoin',
         bio: 'An agent managing Filecoin storage',
         settings: {},
         plugins: [],
-        modelProvider: 'OLLAMA' as const,
         lore: 'Default lore', // Add default value
         messageExamples: [], // Add default value
         postExamples: [], // Add default value
@@ -43,11 +42,10 @@ async function initializeAgentRuntime(db: FilecoinDatabaseAdapter): Promise<Agen
         token: process.env.AGENT_TOKEN || 'default-token',
         serverUrl: 'http://localhost:7998',
         character: {
-            conversationLength: undefined,
+            conversationLength: 50,
             agentId: uuidv4(),
             character: character,
             token: process.env.AGENT_TOKEN || 'default-token',
-            serverUrl: 'http://localhost:7998',
             logging: true,
             actions: [], // Optional custom actions
             evaluators: [], // Optional custom evaluators
@@ -149,11 +147,11 @@ async function main(): Promise<void> {
             {
                 id: runtime.agentId,
                 agentId: runtime.agentId,
-                roomId: uuidv4(), // Generate a UUID for roomId
+                roomId: roomId, // Generate a UUID for roomId
                 content: { text: dataToBackup },
                 embedding: [],
                 createdAt: Date.now(), // Use createdAt instead of created
-                userId: uuidv4()  // Generate a UUID for userId
+                userId: []  // Generate a UUID for userId
             },
             'memories'
         );
