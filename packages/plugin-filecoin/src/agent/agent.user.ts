@@ -1,6 +1,6 @@
 // agent.user.ts
 import { v4 as uuidv4 } from 'uuid';
-import { logger } from '../logger'; // Adjust path if needed; assumes named export
+import logger from '../logger'; // Adjust path if needed; assumes named export
 import { FilecoinClient } from '../types'; // Define types in types.ts
 import { backupDataLocal, filecoinRsRestoreFunction } from '../filecoin-rs-bindings'; // Adjust path after WASM compilation
 import { db } from '../database/storacha-storage'; // Named import
