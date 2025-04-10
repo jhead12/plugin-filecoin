@@ -10,6 +10,8 @@
     "build-docker": "turbo run build",
     "plugin-create":"npx @elizaos/cli@beta create --type plugin",
     "plugin-list":"npx @elizaos/cli@beta project list-plugins",
+    "plugin-test":"npx @elizaos/cli@beta plugin publish --test ",
+
     "plugin-remove": "npx @elizaos/cli@beta project remove-plugin",
     "plugin-add":"npx @elizaos/cli@beta project add-plugin",
     "cleanstart": "if [ -f agent/data/db.sqlite ]; then rm agent/data/db.sqlite; fi && pnpm --filter \"@elizaos/agent\" start --isRoot",

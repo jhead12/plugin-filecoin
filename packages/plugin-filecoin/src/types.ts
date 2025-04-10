@@ -1,6 +1,6 @@
 // packages/plugin-filecoin/src/types.ts
 
-import { CID } from 'multiformats/CID';
+import { CID } from 'multiformats/cid';
 
 export type FilecoinCID = CID;
 
@@ -63,7 +63,7 @@ export interface WasmBackupResult {
     };
 }
 
-export function convertWasmBackupResult(wasmResult: WasmFilecoinBackupResult): FilecoinBackupResult {
+export function convertWasmBackupResult(wasmResult: FilecoinBackupResult): FilecoinBackupResult {
     return {
         cid: 'mock-cid', // Updated later with real CID
         encrypted: wasmResult.metadata.encrypted ?? false, // Default to false if undefined
