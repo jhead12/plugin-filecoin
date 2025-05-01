@@ -1,0 +1,10 @@
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/wasm32-unknown-unknown/release/deps/libthiserror-e38ed336152ef39d.rmeta: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/aserror.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/display.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/var.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/wasm32-unknown-unknown/release/deps/libthiserror-e38ed336152ef39d.rlib: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/aserror.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/display.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/var.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/wasm32-unknown-unknown/release/deps/thiserror-e38ed336152ef39d.d: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/aserror.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/display.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/var.rs
+
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/lib.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/aserror.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/display.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.12/src/var.rs:

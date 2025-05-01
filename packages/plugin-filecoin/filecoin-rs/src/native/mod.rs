@@ -1,7 +1,11 @@
 
-// src/native/mod.rs
+use std::sync::Arc;
+use anyhow::Result;
 
+
+// src/native/mod.rs
 #[cfg(not(target_arch = "wasm32"))]
+
 pub fn run_native() {
     println!("Running native Filecoin operations");
     let blockstore = Arc::new(MemoryBlockstore::default());

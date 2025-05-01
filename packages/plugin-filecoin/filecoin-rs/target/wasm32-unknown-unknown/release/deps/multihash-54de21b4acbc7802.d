@@ -1,0 +1,10 @@
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/wasm32-unknown-unknown/release/deps/libmultihash-54de21b4acbc7802.rmeta: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/multihash.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/serde.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/wasm32-unknown-unknown/release/deps/libmultihash-54de21b4acbc7802.rlib: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/multihash.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/serde.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/wasm32-unknown-unknown/release/deps/multihash-54de21b4acbc7802.d: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/multihash.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/serde.rs
+
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/lib.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/error.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/multihash.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/serde.rs:

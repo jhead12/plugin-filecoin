@@ -1,5 +1,24 @@
 import { invoke } from '@tauri-apps/api/core';
 
+
+// src/main.js
+
+async function fetchArtistData(artistName) {
+    return await invoke('fetch_artist_data', { artist_name: artistName });
+}
+
+async function placeWager(artistName, amount) {
+    return await invoke('place_wager', { artist_name: artistName, amount });
+}
+
+async function storeArtistData(data) {
+    return await invoke('store_artist_data', { data });
+}
+
+async function retrieveArtistData(cid) {
+    return await invoke('retrieve_artist_data', { cid });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Three.js Setup
   const scene = new THREE.Scene();

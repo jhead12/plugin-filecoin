@@ -1,0 +1,11 @@
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/target/release/deps/libcid-b69d1aee029cb612.rmeta: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/cid.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/version.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/serde.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/target/release/deps/libcid-b69d1aee029cb612.rlib: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/cid.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/version.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/serde.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/target/release/deps/cid-b69d1aee029cb612.d: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/cid.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/version.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/serde.rs
+
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/lib.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/cid.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/error.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/version.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cid-0.11.1/src/serde.rs:

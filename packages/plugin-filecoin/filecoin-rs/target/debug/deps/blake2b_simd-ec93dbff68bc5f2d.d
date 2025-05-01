@@ -1,0 +1,9 @@
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/debug/deps/libblake2b_simd-ec93dbff68bc5f2d.rmeta: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/portable.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/blake2bp.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/guts.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/many.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/debug/deps/blake2b_simd-ec93dbff68bc5f2d.d: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/portable.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/blake2bp.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/guts.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/many.rs
+
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/lib.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/portable.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/blake2bp.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/guts.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/blake2b_simd-1.0.3/src/many.rs:

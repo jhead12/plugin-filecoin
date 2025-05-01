@@ -1,0 +1,10 @@
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/target/release/deps/libmultihash-1cb000574a1c462b.rmeta: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/multihash.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/serde.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/target/release/deps/libmultihash-1cb000574a1c462b.rlib: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/multihash.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/serde.rs
+
+/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/target/release/deps/multihash-1cb000574a1c462b.d: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/error.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/multihash.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/serde.rs
+
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/lib.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/error.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/multihash.rs:
+/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multihash-0.19.3/src/serde.rs:
