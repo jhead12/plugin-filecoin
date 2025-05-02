@@ -38,7 +38,7 @@ export class FilecoinRsBindings {
             if (!isConnected) {
             
         } catch (error) 
-            logger.error(`Failed to initialize WASM module: ${error}`);
+            logger.error(`Failed to initialize WASM module: $error`);
             throw error;
         
     }
@@ -52,10 +52,10 @@ export class FilecoinRsBindings {
                 const data = await machine.retrieve_data(cid);
                 results.push(data);
             }
-            logger.info(`Batch downloaded ${cids.length} items`);
+            logger.info(`Batch downloaded $cids.lengthitems`);
             return results;
         } catch (error) {
-            logger.error(`Batch download failed: ${error}`);
+            logger.error(`Batch download failed: $error`);
             throw error;
         }
 
@@ -81,11 +81,11 @@ export class FilecoinRsBindings {
             const cid = await client.put([file]);
 
             await fs.writeFile(path, backupData);
-            logger.info(`Backup successful. CID: ${cid}, Path: ${path}`);
+            logger.info(`Backup successful. CID: $cid, Path: $path`);
             return { ...result, cid, encrypted, data: backupData };
         } catch (error) {
             const errorMsg = error instanceof Error ? error.message : String(error);
-            logger.error(`Backup failed: ${errorMsg}`);
+            logger.error(`Backup failed: $errorMsg`);
             return {
                 cid: '',
                 encrypted,
@@ -127,10 +127,10 @@ export class FilecoinRsBindings {
 
             wasmRestoreFromBackup(backupPath, destinationPath, decryptionKey || null);
             await fs.writeFile(destinationPath, dataToRestore);
-            logger.info(`Restored data to ${destinationPath}`);
+            logger.info(`Restored data to $destinationPath`);
             return true;
         } catch (error) {
-            logger.error(`Restore failed: ${error}`);
+            logger.error(`Restore failed: $error`);
             return false;
         }
     }

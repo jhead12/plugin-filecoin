@@ -5,7 +5,7 @@
     "logging": true,
     "settings": {
         "voice": {
-            "model": "qwen2.5-coder:14b"
+            "model": "qwen2.5-coder:1.5b"
         }
     },
     "plugins": [
