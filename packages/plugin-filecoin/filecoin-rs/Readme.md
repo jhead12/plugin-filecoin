@@ -1,7 +1,3 @@
-Absolutely! Here’s the updated README with the **music bartering system** section incorporated.
-
----
-
 # **Filecoin Plugin (`@elizaos/plugin-filecoin`)**  
 
 ## **Overview**  
@@ -104,4 +100,3 @@ cd filecoin-rs/data_miner/src-tauri/target/debug
 
 ---
 
-Now, the README clearly explains the **bartering system** and how users interact with **artist valuation markets**. Let me know if you'd like further refinements! 🚀
