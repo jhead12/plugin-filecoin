@@ -1,0 +1,50 @@
+{
+    "$schema": "https://schema.tauri.app/config/2",
+    "productName": "filecoin-rs",
+    "version": "0.1.0",
+    "identifier": "com.filecoin-rs.app",
+    "build": {
+        "frontendDist": "../../dist"
+    },
+    "app": {
+        "withGlobalTauri": true,
+        "windows": [
+            {
+                "title": "filecoin-rs",
+                "width": 800,
+                "height": 600
+            }
+        ],
+        "security": {
+            "csp": "default-src 'self' 'unsafe-eval'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'",
+            "capabilities": [
+                {
+                    "identifier": "default",
+                    "permissions": [
+                        "core:window:default",
+                        "core:app:default",
+                        "core:event:default",
+                        "core:menu:default",
+                        "core:path:default",
+                        "core:tray:default",
+                        "core:webview:default",
+                        "log:default",
+                        "opener:default",
+                        "window-state:default"
+                    ]
+                }
+            ]
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ]
+    }
+}

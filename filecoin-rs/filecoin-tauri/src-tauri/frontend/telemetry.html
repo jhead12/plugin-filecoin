@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Data Transfers</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Data Transfers</h1>
+        <table id="transfers">
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>CID</th>
+                    <th>Size (bytes)</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody id="transfers-body"></tbody>
+        </table>
+        <script type="module">
+            import { invoke } from "@tauri-apps/api/core";
+            import { listen } from "@tauri-apps/api/event";
+
+            async function updateTransfers() {
+                const transfers = await invoke("get_transfers");
+                const tbody = document.getElementById("transfers-body");
+                tbody.innerHTML = "";
+                transfers.forEach((t) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                    <td>${t.action}</td>
+                    <td>${t.cid}</td>
+                    <td>${t.size}</td>
+                    <td>${t.timestamp}</td>
+                `;
+                    tbody.appendChild(row);
+                });
+            }
+
+            // Update on load
+            updateTransfers();
+
+            // Listen for new transfers (optional real-time updates)
+            listen("transfer-updated", () => updateTransfers());
+        </script>
+    </body>
+</html>

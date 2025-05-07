@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+target/
+build/
+# Log files & swap files
+*.log
+*.swp
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# WASM build artifacts
+*.wasm
+*.wasm.map
+*.wasm.d.ts
+*.wasm.d.ts.map
+
+# Tauri-specific build artifacts
+src-tauri/target/
+src-tauri/build/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# OS generated files
+.DS_Store

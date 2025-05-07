@@ -1,0 +1,9 @@
+name: filecoin-agent
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - opentelemetry-api
+  - opentelemetry-sdk
+  - opentelemetry-exporter-otlp
+  - rust  # For compiling Rust code in the environment

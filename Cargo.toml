@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "filecoin-rs/filecoin-cli",
+    "filecoin-rs/filecoin-core",
+    "filecoin-rs/filecoin-tauri",
+]
+
+[package]
+name = "filecoin_rs"
+version = "0.1.0"
+edition = "2018"
+description = "Filecoin Rust SDK"
+README = "README.md"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path = "/filecoin-rs/src/lib.rs"

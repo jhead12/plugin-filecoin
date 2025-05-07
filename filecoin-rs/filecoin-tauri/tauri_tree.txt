@@ -1,0 +1,113 @@
+-rw-r--r--@ 1 jeldonmusic  wheel     184 Apr 29 20:36 capabilities/desktop.json
+-rw-r--r--  1 jeldonmusic  wheel    1692 Apr 13 12:37 frontend/App.tsx
+-rw-r--r--@ 1 jeldonmusic  wheel    1512 Apr 29 20:36 frontend/index.html
+-rw-r--r--@ 1 jeldonmusic  wheel    3454 Apr 29 20:39 frontend/main.js
+-rw-r--r--  1 jeldonmusic  wheel    1084 Apr 13 12:41 frontend/main.tsx
+-rw-r--r--  1 jeldonmusic  wheel    2836 Apr 10 10:45 frontend/styles.css
+-rw-r--r--  1 jeldonmusic  wheel    1525 Apr 10 10:45 frontend/telemetry.html
+-rw-r--r--  1 jeldonmusic  wheel      38 Apr 13 12:27 frontend/vite-env.d.ts
+-rw-r--r--  1 jeldonmusic  wheel    3512 Apr 10 10:23 icons/128x128.png
+-rw-r--r--  1 jeldonmusic  wheel    7012 Apr 10 10:23 icons/128x128@2x.png
+-rw-r--r--  1 jeldonmusic  wheel     974 Apr 10 10:23 icons/32x32.png
+-rw-r--r--  1 jeldonmusic  wheel    2863 Apr 10 10:23 icons/Square107x107Logo.png
+-rw-r--r--  1 jeldonmusic  wheel    3858 Apr 10 10:23 icons/Square142x142Logo.png
+-rw-r--r--  1 jeldonmusic  wheel    3966 Apr 10 10:23 icons/Square150x150Logo.png
+-rw-r--r--  1 jeldonmusic  wheel    7737 Apr 10 10:23 icons/Square284x284Logo.png
+-rw-r--r--  1 jeldonmusic  wheel     903 Apr 10 10:23 icons/Square30x30Logo.png
+-rw-r--r--  1 jeldonmusic  wheel    8591 Apr 10 10:23 icons/Square310x310Logo.png
+-rw-r--r--  1 jeldonmusic  wheel    1299 Apr 10 10:23 icons/Square44x44Logo.png
+-rw-r--r--  1 jeldonmusic  wheel    2011 Apr 10 10:23 icons/Square71x71Logo.png
+-rw-r--r--  1 jeldonmusic  wheel    2468 Apr 10 10:23 icons/Square89x89Logo.png
+-rw-r--r--  1 jeldonmusic  wheel    1523 Apr 10 10:23 icons/StoreLogo.png
+-rw-r--r--  1 jeldonmusic  wheel   98451 Apr 10 10:23 icons/icon.icns
+-rw-r--r--  1 jeldonmusic  wheel   86642 Apr 10 10:23 icons/icon.ico
+-rw-r--r--  1 jeldonmusic  wheel   14183 Apr 10 10:23 icons/icon.png
+-rw-r--r--  1 jeldonmusic  wheel    1978 Apr 10 10:16 permissions/mod.rs
+-rw-r--r--  1 jeldonmusic  wheel   65598 May  2 23:02 schemas/acl-manifests.json
+-rw-r--r--  1 jeldonmusic  wheel     186 May  2 13:59 schemas/capabilities.json
+-rw-r--r--  1 jeldonmusic  wheel  123276 May  2 23:02 schemas/desktop-schema.json
+-rw-r--r--  1 jeldonmusic  wheel  123276 May  2 23:02 schemas/macOS-schema.json
+-rw-r--r--  1 jeldonmusic  wheel     420 Apr 27 21:26 services/default.json
+-rw-r--r--  1 jeldonmusic  wheel     477 May  2 16:23 services/filecoin.rs
+-rw-r--r--  1 jeldonmusic  wheel      53 May  2 16:23 services/mod.rs
+-rw-r--r--  1 jeldonmusic  wheel     442 May  2 16:23 services/soundcharts.rs
+-rw-r--r--  1 jeldonmusic  wheel     550 May  2 17:13 services/wager.rs
+-rw-r--r--  1 jeldonmusic  wheel  210831 May  3 19:46 src-tauri/Cargo.lock
+-rw-r--r--  1 jeldonmusic  wheel     780 May  5 00:05 src-tauri/Cargo.toml
+-rw-r--r--  1 jeldonmusic  wheel      38 May  3 01:54 src-tauri/build.rs
+-rw-r--r--@ 1 jeldonmusic  wheel    1162 May  3 01:44 src-tauri/tauri.conf.json
+-rw-r--r--  1 jeldonmusic  wheel     177 May  3 19:46 target/CACHEDIR.TAG
+-rw-r--r--  1 jeldonmusic  wheel    2481 Apr 10 10:16 telemetry/telemetry.rs
+
+frontend/assets:
+total 16
+drwxr-xr-x   4 jeldonmusic  wheel   128 Apr 10 10:45 .
+drwxr-xr-x  15 jeldonmusic  wheel   480 May  5 00:39 ..
+-rw-r--r--   1 jeldonmusic  wheel   995 Apr 10 10:45 javascript.svg
+-rw-r--r--   1 jeldonmusic  wheel  2599 Apr 10 10:45 tauri.svg
+
+frontend/components:
+total 16
+drwxr-xr-x   4 jeldonmusic  wheel   128 Apr 29 18:20 .
+drwxr-xr-x  15 jeldonmusic  wheel   480 May  5 00:39 ..
+-rw-r--r--   1 jeldonmusic  wheel  3041 Apr 13 12:38 Menu.tsx
+-rw-r--r--   1 jeldonmusic  wheel  2277 Apr 13 12:37 ThreeJsBackground.tsx
+
+frontend/context:
+total 8
+drwxr-xr-x   3 jeldonmusic  wheel   96 Apr 13 12:27 .
+drwxr-xr-x  15 jeldonmusic  wheel  480 May  5 00:39 ..
+-rw-r--r--   1 jeldonmusic  wheel  668 Apr 30 23:38 AuthContext.tsx
+
+frontend/pages:
+total 24
+drwxr-xr-x   5 jeldonmusic  wheel   160 Apr 13 12:27 .
+drwxr-xr-x  15 jeldonmusic  wheel   480 May  5 00:39 ..
+-rw-r--r--   1 jeldonmusic  wheel   872 Apr 15 22:30 DataTransfers.tsx
+-rw-r--r--   1 jeldonmusic  wheel  1950 Apr 13 12:27 KubernetesCreate.tsx
+-rw-r--r--   1 jeldonmusic  wheel  1968 Apr 13 12:27 KubernetesDashboard.tsx
+
+frontend/src:
+total 112
+drwxr-xr-x@ 20 jeldonmusic  wheel   640 May  5 00:41 .
+drwxr-xr-x  15 jeldonmusic  wheel   480 May  5 00:39 ..
+-rw-r--r--@  1 jeldonmusic  wheel  6148 May  5 00:41 .DS_Store
+drwxr-xr-x   5 jeldonmusic  wheel   160 Apr  8 23:43 __test__
+drwxr-xr-x  14 jeldonmusic  wheel   448 May  5 00:40 agent
+drwxr-xr-x   3 jeldonmusic  wheel    96 Apr  6 17:23 backup
+-rw-r--r--   1 jeldonmusic  wheel   558 May  3 10:48 client.ts
+drwxr-xr-x   8 jeldonmusic  wheel   256 Apr  7 19:46 database
+-rw-r--r--   1 jeldonmusic  wheel  3027 Apr 29 22:08 encryption.ts
+drwxr-xr-x   3 jeldonmusic  wheel    96 Apr  9 01:27 errors
+-rw-r--r--   1 jeldonmusic  wheel  4093 Apr 14 02:27 filecoin-network.ts
+-rw-r--r--   1 jeldonmusic  wheel  6403 May  4 00:02 filecoin-rs-bindings.ts
+-rw-r--r--   1 jeldonmusic  wheel  6821 May  3 10:44 index.ts
+drwxr-xr-x   4 jeldonmusic  wheel   128 Apr  6 17:23 interop
+-rw-r--r--   1 jeldonmusic  wheel   754 May  3 12:43 logger.ts
+drwxr-xr-x   3 jeldonmusic  wheel    96 Apr  6 17:23 network
+-rw-r--r--   1 jeldonmusic  wheel  3629 Apr  6 17:23 performance-monitoring.ts
+-rw-r--r--   1 jeldonmusic  wheel   778 Apr 13 12:08 restore.ts
+-rw-r--r--   1 jeldonmusic  wheel  3315 May  3 14:48 types.ts
+-rw-r--r--   1 jeldonmusic  wheel   582 Apr 30 23:38 utils.ts
+
+frontend/utils:
+total 8
+drwxr-xr-x   3 jeldonmusic  wheel   96 Apr 29 20:36 .
+drwxr-xr-x  15 jeldonmusic  wheel  480 May  5 00:39 ..
+-rw-r--r--   1 jeldonmusic  wheel  195 Apr 13 12:27 page.d.ts
+
+src-tauri/gen:
+total 0
+drwxr-xr-x  2 jeldonmusic  wheel   64 May  5 00:51 .
+drwxr-xr-x  9 jeldonmusic  wheel  288 May  5 00:51 ..
+
+target/debug:
+total 0
+drwxr-xr-x      8 jeldonmusic  wheel     256 May  3 19:46 .
+drwxr-xr-x@     5 jeldonmusic  wheel     160 May  3 19:47 ..
+-rw-r--r--      1 jeldonmusic  wheel       0 May  3 19:46 .cargo-lock
+drwxr-xr-x   1003 jeldonmusic  wheel   32096 May  4 22:05 .fingerprint
+drwxr-xr-x    132 jeldonmusic  wheel    4224 May  3 19:46 build
+drwxr-xr-x  12118 jeldonmusic  wheel  387776 May  4 22:09 deps
+drwxr-xr-x      2 jeldonmusic  wheel      64 May  3 19:46 examples
+drwxr-xr-x      3 jeldonmusic  wheel      96 May  3 19:47 incremental

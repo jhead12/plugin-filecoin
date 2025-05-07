@@ -1,0 +1,88 @@
+{
+  "name": "@elizaos/plugin-web3-connector",
+  "version": "1.0.0",
+  "description": "A plugin for ElizaOS that provides creative storage solutions using Filecoin and IPFS.",
+  "private": true,
+  "author": "Ahead Technologies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhead12/elizaos-plugins/plugin-filecoin"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "target",
+    "filecoin-rs/pkg"
+  ],
+  "scripts": {
+    "start": "npx @elizaos/cli start",
+    "test-with-cli": "cd ../cli && bun run build && cd ../plugin-starter && elizaos test",
+    "dev": "npx @elizaos/cli dev",
+    "build:wasm": "cd filecoin-rs && wasm-pack build --target nodejs --out-dir pkg --release && cd ..",
+    "build:wasm:dev": "cd filecoin-rs &&  wasm-pack build --target nodejs --out-dir pkg && cd ..",
+    "build:ui": "cd filecoin-rs && cd data_miner/src-tauri/ && cargo build && cargo run && cd ../..",
+    "build:ui:dev": "cd data_miner/src-tauri/ && cargo build && cargo run --release && cd ../..",
+    "build:ui:release": "cd data_miner/src-tauri/ && cargo build --release && cargo run --release && cd ../..",
+    "lint": "prettier --write ./filecoin-rs",
+    "test": "npx @elizaos/cli test",
+    "publish": "npx @elizaos/cli plugin publish",
+    "clean": "rm -rf dist && rm -rf target",
+    "build:data-miner": "cd filecoin-rs && cd data_miner/src-tauri/ && cargo build && cargo run",
+    "build:wasm:debug": "cd filecoin-rs && wasm-pack build --target nodejs --out-dir pkg",
+    "build:wasm:all": "cd filecoin-rs && cargo build --target wasm32-unknown-unknown --no-default-features",
+    "build:wasm:release:dev": "cd filecoin-rs && wasm-pack build --target nodejs --out-dir pkg --release",
+    "format": "prettier --write ./filecoin-rs",
+    "format:check": "prettier --check ./filecoin-rs"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.6",
+    "@ceramicnetwork/http-client": "^6.4.0",
+    "@ceramicnetwork/stream-tile": "^6.4.0",
+    "@elizaos/cli": "1.0.0-beta.7",
+    "@elizaos/core": "workspace:*",
+    "@elizaos/plugin-bootstrap": "workspace:*",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.200.0",
+    "@opentelemetry/resources": "^2.0.0",
+    "@opentelemetry/sdk-node": "^0.200.0",
+    "@opentelemetry/sdk-trace-base": "^2.0.0",
+    "@opentelemetry/semantic-conventions": "^1.31.0",
+    "@storacha/client": "1.2.4",
+    "@storacha/elizaos-plugin": "1.2.0",
+    "@types/node": "22.13.14",
+    "@web3-storage/w3up-client": "17.2.0",
+    "axios": "1.8.4",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "graphql": "^16.10.0",
+    "graphql-http": "^1.22.4",
+    "ipfs-http-client": "^60.0.1",
+    "multiformats": "13.3.2",
+    "opentelemetry": "^0.1.0",
+    "react": "19.1.0",
+    "react-router-dom": "7.4.1",
+    "sequelize": "^6.0.0",
+    "ts-retry-promise": "^0.8.1",
+    "uuid": "11.1.0",
+    "winston": "3.17.0",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "prettier": "3.5.3",
+    "tsup": "8.4.0",
+    "wasm-pack": "^0.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
