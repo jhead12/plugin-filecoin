@@ -5,6 +5,7 @@ node_modules/
 dist/
 target/
 build/
+
 # Log files & swap files
 *.log
 *.swp
@@ -30,3 +31,6 @@ src-tauri/build/
 
 # OS generated files
 .DS_Store
+
+# Cargo-specific build artifacts
+Cargo.lock
