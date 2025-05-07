@@ -38,3 +38,4 @@ arc = "0.0.1"  # Verify if needed; consider std::sync::Arc instead
 [features]
 default = []
 fvm_support = ["fvm_ipld_blockstore", "fvm", "fvm_shared", "fvm_ipld_encoding"]
+fvm_ipld_blockstore = ["dep:fvm_ipld_blockstore"]

@@ -1,142 +1,170 @@
-# Filecoin Plugin
-
-The Filecoin Plugin (`@elizaos/plugin-filecoin`) is a powerful software package designed to integrate Filecoin’s decentralized storage and blockchain capabilities into the ElizaOS ecosystem. It provides enterprises and developers with tools for secure, scalable, and cost-effective data management, leveraging Rust-based WebAssembly (WASM) bindings and TypeScript/JavaScript interfaces.
-
-## Overview
-
-This plugin enables interaction with the Filecoin blockchain and its Virtual Machine (FVM), offering features like encrypted backups, decentralized storage via Filecoin/Storacha, and performance monitoring. It’s ideal for enterprises seeking to reduce storage costs, ensure data sovereignty, and prepare for Web3 and decentralized AI workflows.
 
 
-### Updated Instructions for `generate-pages.sh`
+# **Filecoin Plugin (`@elizaos/plugin-filecoin`)**  
 
-#### Setting Up `generate-pages.sh`
+## **Overview**  
+The `Filecoin Plugin` (`@elizaos/plugin-filecoin`) integrates **Filecoin’s decentralized storage** and **blockchain capabilities** into **ElizaOS**, providing enterprises and developers with tools for **secure, scalable, and cost-effective data management** using **Rust-based WebAssembly (WASM)** and **TypeScript/JavaScript interfaces**.
 
-1. **Ensure Permissions**: Make sure the script has executable permissions. You can add them using:
-   ```bash
-   chmod +x packages/plugin-filecoin/bin/generate-pages.sh
-   ```
+### **Key Benefits**  
+- **Decentralized Storage** via **Filecoin & Storacha**, ensuring secure, redundant backups.  
+- **Music Bartering Marketplace** powered by **Soundcharts API** for artist valuation and trading.  
+- **NFT Metadata Tracking** for ownership validation and provenance management.  
+- **Modular Plugin System** (Music, Sports, Gaming, Education) for industry-specific functionality.  
+- **Performance Monitoring & Blockchain Interactions** via **Filecoin Virtual Machine (FVM)**.  
 
-2. **Run the Script**: Execute the script to generate the necessary pages:
-   ```bash
-   ./packages/plugin-filecoin/bin/generate-pages.sh
-   ```
+---
 
-This will copy the template files from `packages/plugin-filecoin/templates` to `client/src/routes`.
+## **Features**  
 
-#### Environment Variables
+### **1. Music Asset Bartering & Tokenization**  
+This plugin introduces an **interactive artist valuation marketplace**, where users can **bid** on an artist’s market value using **live data** from **Soundcharts API**.
 
-To ensure all environment variables are set up correctly, follow these steps:
+#### **How It Works**  
+1. **Artist Valuation via Soundcharts API**  
+   - The plugin fetches **real-time artist data** (streams, social engagement, rankings).  
+   - This data establishes an **initial market price**, creating a **dynamic valuation system**.
 
-1. **Create a `.env` File**: In the root of your project, create a `.env` file.
+2. **User Bidding & Price Formation**  
+   - Fans and investors **buy/sell stakes** in an artist's value, adjusting pricing via **active bidding**.  
+   - **High bidding activity raises an artist’s value**, while **low demand reduces it**, functioning like a **stock exchange**.
 
-2. **Add Required Variables**: Add the necessary environment variables to this file. For example:
-   ```plaintext
-   DB_DIALECT=postgres
-   DATABASE_URL=your_database_url
-   ENCRYPTION_KEY=your_32_byte_key_here
-   STORACHA_CLIENT_CONFIG=your_storacha_client_config
-   ```
+3. **NFT Minting & Music Asset Tokenization**  
+   - When an artist or track reaches a **valuation threshold**, it can be **minted as an NFT**.  
+   - The NFT embeds ownership rights, **streaming privileges**, and **revenue-sharing models**.
 
-3. **Load Environment Variables**: Ensure your application loads these variables. In a Node.js environment, you can use `dotenv`:
-   ```bash
-   npm install dotenv
-   ```
-   Then in your entry file (e.g., `src/index.ts`), add:
-   ```javascript
-   require('dotenv').config();
-   ```
+4. **Stake-Weighted Influence**  
+   - Those invested in an artist’s **value** gain **voting power** over rankings, song selection, and event placements.  
+   - This **creates an economic connection** between artists and their fanbase.
 
-4. **Verify Variables**: You can verify that the variables are set correctly by logging them:
-   ```javascript
-   console.log(process.env.DB_DIALECT);
-   console.log(process.env.DATABASE_URL);
-   console.log(process.env.ENCRYPTION_KEY);
-   console.log(process.env.STORACHA_CLIENT_CONFIG);
-   ```
+5. **Trading & Redemption**  
+   - Users **trade stakes** or **redeem them for exclusive perks**, such as **concert access**, **premium content**, or **collectibles**.  
+   - Artists and investors **benefit from market appreciation**, fostering **Web3-based music finance**.  
 
-#### Updated `README.md` Section
+---
 
-```markdown
-## Getting Started
+### **2. NFT-Based Metadata Management**  
+- **Decentralized metadata tracking** using **Filecoin storage**.  
+- **AI-enhanced content recommendations** based on voting and **engagement trends**.  
 
-### Prerequisites
-- **Rust**: Install via `rustup`.
-- **wasm-pack**: `cargo install wasm-pack` for WASM compilation.
-- **Node.js**: v14+ recommended.
-- **npm**: For TypeScript dependencies.
+### **3. Filecoin Integration & Blockchain Interactions**  
+- **Encrypted backups** to **Storacha & Filecoin**, ensuring **secure decentralized file storage**.  
+- **Smart contract integration** via **Filecoin Virtual Machine (FVM)**.  
+- **Performance monitoring** for storage efficiency and blockchain interactions.  
 
-### Installation
-1. **Clone the Repository:**
+### **4. Modular Plugin Architecture**  
+- **Music Plugin**: Stake-weighted voting, **radio rankings**, metadata trading.  
+- **Sports Plugin**: Match predictions, decentralized **event polling**.  
+- **Gaming Plugin**: **Web3 tournaments** with tokenized rewards.  
+- **Education Plugin**: AI-assisted learning **recommendation systems**.  
+
+---
+
+## **Installation & Setup**  
+
+### **Quick Start (Node.js)**  
+1. **Clone the Repository**  
    ```bash
    git clone https://github.com/elizaos-plugins/plugin-filecoin
    cd packages/plugin-filecoin
    ```
-
-2. **Install Dependencies:**
+2. **Install Dependencies & Build**  
    ```bash
    npm install
-   ```
-
-3. **Build the Plugin:**
-   ```bash
    npm run build
    ```
-
-4. **Update ElizaOS with the Plugin:**
+3. **Start the Plugin**  
    ```bash
-   pnpm --filter "@elizaos/plugin-filecoin" build
+   npm run start
    ```
 
-### Setting Up `generate-pages.sh`
-1. **Ensure Permissions**: Make sure the script has executable permissions.
+---
+
+## **Tauri UI Integration**  
+
+The **Tauri UI** provides a **Rust-powered interface** for interacting with the Filecoin plugin.  
+Users will receive a **precompiled UI binary**, eliminating the need for manual builds.
+
+### **Running the Precompiled UI**  
+1. **Navigate to the compiled UI package**  
+   ```bash
+   cd filecoin-rs/data_miner/src-tauri/target/release
+   ```
+2. **Run the UI binary**  
+   ```bash
+   ./elizaos-ui
+   ```
+
+For a **debug build**, use:  
+```bash
+cd filecoin-rs/data_miner/src-tauri/target/debug
+./elizaos-ui
+```
+
+---
+
+## **Generate Pages Setup (`generate-pages.sh`)**  
+
+### **Setting Up `generate-pages.sh`**  
+1. **Ensure Permissions**  
    ```bash
    chmod +x packages/plugin-filecoin/bin/generate-pages.sh
    ```
-
-2. **Run the Script**: Execute the script to generate the necessary pages.
+2. **Run the Script**  
    ```bash
    ./packages/plugin-filecoin/bin/generate-pages.sh
    ```
+   This copies template files into `client/src/routes`.
 
-### Environment Variables
+---
 
-To ensure all environment variables are set up correctly, follow these steps:
+## **Environment Variables**  
 
-1. **Create a `.env` File**: In the root of your project, create a `.env` file.
+### **Configuration Guide**  
+Create a `.env` file in the **root directory** to store essential variables:
 
-2. **Add Required Variables**: Add the necessary environment variables to this file.
-   ```plaintext
-   DB_DIALECT=postgres
-   DATABASE_URL=your_database_url
-   ENCRYPTION_KEY=your_32_byte_key_here
-   STORACHA_CLIENT_CONFIG=your_storacha_client_config
-   ```
+```plaintext
+DB_DIALECT=postgres
+DATABASE_URL=your_database_url
+ENCRYPTION_KEY=your_32_byte_key_here
+STORACHA_CLIENT_CONFIG=your_storacha_client_config
+```
 
-3. **Load Environment Variables**: Ensure your application loads these variables. In a Node.js environment, you can use `dotenv`:
+### **Loading Variables in Node.js**  
+1. **Install dotenv**  
    ```bash
    npm install dotenv
    ```
-   Then in your entry file (e.g., `src/index.ts`), add:
+2. **Load Environment Variables** in your entry file (`src/index.ts`):  
    ```javascript
    require('dotenv').config();
    ```
 
-4. **Verify Variables**: You can verify that the variables are set correctly by logging them:
-   ```javascript
-   console.log(process.env.DB_DIALECT);
-   console.log(process.env.DATABASE_URL);
-   console.log(process.env.ENCRYPTION_KEY);
-   console.log(process.env.STORACHA_CLIENT_CONFIG);
-   ```
+---
 
-## Verification
-Native Build: `cd filecoin-rs && cargo build` (multi-threaded runtime).
+## **Build Verification**  
 
-WASM Build: `cd filecoin-rs && cargo build --target wasm32-unknown-unknown --features wasm` (single-threaded runtime).
+### **Native Rust Build**  
+```bash
+cd filecoin-rs && cargo build
+```
+*(Multi-threaded runtime for optimized performance.)*
 
-Web Target: `cd filecoin-rs && wasm-pack build --target web --out-dir pkg`.
+### **WASM Build**  
+```bash
+cd filecoin-rs && cargo build --target wasm32-unknown-unknown --features wasm
+```
+*(Single-threaded runtime for WASM compatibility.)*
 
-## Usage Example
+### **Web Target Build**  
+```bash
+cd filecoin-rs && wasm-pack build --target web --out-dir pkg
+```
+*(Optimized for browser integration.)*
+
+---
+
+## **Usage Example**  
+
 ```javascript
 import { initialize, backupDataLocal, filecoinRsRestoreFunction } from './src/index';
 
@@ -155,38 +183,12 @@ async function run() {
 run();
 ```
 
-## Configuration
-Database: Supports PostgreSQL (default) or SQLite via DB_DIALECT env var (see performance-monitoring.ts).
+---
 
-Encryption Key: Set a 32-byte key in encryption.ts or via env vars.
+## **Contributing**  
+Fork the repository and submit **pull requests** at:  
+🔗 [https://github.com/elizaos-plugins/plugin-filecoin](https://github.com/elizaos-plugins/plugin-filecoin)
 
-Storacha: Configure @storacha/client for decentralized storage (optional).
-
-## Contributing
-Fork the repo, submit PRs to https://github.com/elizaos-plugins/plugin-filecoin.
-License
-MIT License (or specify your license).
-```
-
-This should cover all the steps needed to set up the `generate-pages.sh` script and ensure that all environment variables are correctly configured. Let me know if you need further adjustments!
-
-
-# Winning Criteria
-
-3 Keys to a Winning Submission
-A Stellar Codebase
-Make it publicly accessible with clean organization that impresses judges.
-Create an outstanding README that makes your project easy to understand.
-Highlight sponsor tech integration clearly to show you've met the challenge criteria.
-A Compelling Video Demo
-Keep it concise (under 3 minutes) to respect judges' time.
-Tell a story that shows both the problem you're solving and a clear demonstration of how your solution works.
-Extra Elements That Impress Judges
-Visual Presentation: A polished slide deck that communicates your vision, technical implementation, and potential impact.
-Interactive Demo: A live version judges can try themselves, making your project memorable.
-Technical Documentation: Showing the depth of your thinking and attention to detail.
-
-
-
-
+## **License**  
+📜 **MIT License** (or specify your license).  
 
