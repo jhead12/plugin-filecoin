@@ -103,3 +103,10 @@ fn rocket() -> _ {
         .mount("/agents", routes![get_agents, create_agent, update_agent, delete_agent])
         .mount("/access", routes![get_access])
 }
+async fn update_user(db: &MyDatabase, id: i64, user: User) -> Result<(), sqlx::Error> {
+    logDebug("Updating user information");
+    sqlx::query!("UPDATE users SET name = $1, email = $2 WHERE id = $3", user.name, user.email, id)
+        .execute(&db.0)
+        .await?;
+    Ok(())
+}

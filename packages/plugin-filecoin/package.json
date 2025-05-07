@@ -28,13 +28,12 @@
     "start": "npx @elizaos/cli start",
     "test-with-cli": "cd ../cli && bun run build && cd ../plugin-starter && elizaos test",
     "dev": "npx @elizaos/cli dev",
-    "generate-pages": "bash ./bin/generate-pages.sh",
     "build:wasm": "cd filecoin-rs && wasm-pack build --target nodejs --out-dir pkg --release && cd ..",
     "build:wasm:dev": "cd filecoin-rs &&  wasm-pack build --target nodejs --out-dir pkg && cd ..",
     "build:ui": "cd filecoin-rs && cd data_miner/src-tauri/ && cargo build && cargo run && cd ../..",
     "build:ui:dev": "cd data_miner/src-tauri/ && cargo build && cargo run --release && cd ../..",
     "build:ui:release": "cd data_miner/src-tauri/ && cargo build --release && cargo run --release && cd ../..",
-    "lint": "prettier --write ./src",
+    "lint": "prettier --write ./filecoin-rs",
     "test": "npx @elizaos/cli test",
     "publish": "npx @elizaos/cli plugin publish",
     "clean": "rm -rf dist && rm -rf target",
@@ -42,8 +41,8 @@
     "build:wasm:debug": "cd filecoin-rs && wasm-pack build --target nodejs --out-dir pkg",
     "build:wasm:all": "cd filecoin-rs && cargo build --target wasm32-unknown-unknown --no-default-features",
     "build:wasm:release:dev": "cd filecoin-rs && wasm-pack build --target nodejs --out-dir pkg --release",
-    "format": "prettier --write ./src",
-    "format:check": "prettier --check ./src"
+    "format": "prettier --write ./filecoin-rs",
+    "format:check": "prettier --check ./filecoin-rs"
   },
   "dependencies": {
     "@apollo/client": "^3.13.6",

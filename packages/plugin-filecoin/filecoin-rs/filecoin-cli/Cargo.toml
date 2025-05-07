@@ -1,0 +1,20 @@
+[package]
+name = "filecoin-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["Joshua Head <support@jeldonmusic.com>"]
+description = "CLI for interacting with Filecoin integrations"
+repository = "https://github.com/jhead12"
+license = "MIT"
+
+[[bin]]
+name = "filecoin-cli"
+path = "src/main.rs"
+
+[dependencies]
+filecoin-core = { path = "../filecoin-core" }
+anyhow = "1.0"
+log = "0.4"
+# (Optional) Add libraries for argument parsing such as clap or structopt.
+clap = { version = "4.5.37", features = ["derive"] }
+dexter-ipfs-car = "0.3.0"

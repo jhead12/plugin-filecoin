@@ -1,0 +1,1 @@
+// Agent Intent manages the intent of the agent.

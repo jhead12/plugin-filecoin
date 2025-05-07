@@ -1,7 +1,8 @@
 
 use std::sync::Arc;
-use anyhow::Result;
-
+use crate::Blockstore;
+use crate::MemoryBlockstore;
+use crate::MyMachine;
 
 // src/native/mod.rs
 #[cfg(not(target_arch = "wasm32"))]

@@ -1,9 +1,0 @@
-/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/debug/deps/liblibipld_cbor-b2cd154605e7dcbf.rmeta: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/cbor.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/decode.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/encode.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/error.rs
-
-/Users/jeldonmusic/Documents/matrixblend_com/Elizaos2/eliza/packages/plugin-filecoin/filecoin-rs/target/debug/deps/libipld_cbor-b2cd154605e7dcbf.d: /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/lib.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/cbor.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/decode.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/encode.rs /Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/error.rs
-
-/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/lib.rs:
-/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/cbor.rs:
-/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/decode.rs:
-/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/encode.rs:
-/Users/jeldonmusic/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libipld-cbor-0.16.0/src/error.rs:

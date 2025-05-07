@@ -1,0 +1,86 @@
+-rw-r--r--  1 jeldonmusic  wheel      26 Apr  6 17:23 docs/feature-overview.md
+-rw-r--r--  1 jeldonmusic  wheel    7369 Apr  6 17:23 docs/front-end-dev-overview.md
+-rw-r--r--  1 jeldonmusic  wheel      13 Apr  6 17:23 docs/installation-guide.md
+-rw-r--r--  1 jeldonmusic  wheel       0 Apr  6 17:23 docs/usage-example.md
+-rw-r--r--  1 jeldonmusic  wheel  211076 May  6 20:20 filecoin-rs/Cargo.lock
+-rw-r--r--  1 jeldonmusic  wheel    3840 May  5 03:03 filecoin-rs/Readme.md
+-rw-r--r--  1 jeldonmusic  wheel       0 Apr  8 23:25 python/requirements.txt
+-rw-r--r--  1 jeldonmusic  wheel       0 Apr  6 17:23 templates/ProtectedRoute.tsx
+-rw-r--r--  1 jeldonmusic  wheel    1625 Apr  6 17:23 templates/login.tsx
+
+filecoin-rs/filecoin-cli:
+total 8
+drwxr-xr-x   4 jeldonmusic  wheel  128 May  7 00:10 .
+drwxr-xr-x  11 jeldonmusic  wheel  352 May  6 23:27 ..
+-rw-r--r--   1 jeldonmusic  wheel  509 May  6 23:32 Cargo.toml
+drwxr-xr-x   3 jeldonmusic  wheel   96 May  7 00:10 src
+
+filecoin-rs/filecoin-core:
+total 8
+drwxr-xr-x   3 jeldonmusic  wheel    96 May  6 23:27 .
+drwxr-xr-x  11 jeldonmusic  wheel   352 May  6 23:27 ..
+-rw-r--r--   1 jeldonmusic  wheel  1368 May  6 23:28 Cargo.toml
+
+filecoin-rs/filecoin-tauri:
+total 56
+drwxr-xr-x  15 jeldonmusic  wheel   480 May  5 11:58 .
+drwxr-xr-x  11 jeldonmusic  wheel   352 May  6 23:27 ..
+-rw-r--r--@  1 jeldonmusic  wheel  6148 May  5 02:37 .DS_Store
+-rw-r--r--   1 jeldonmusic  wheel   164 May  3 10:37 .env
+-rw-r--r--   1 jeldonmusic  wheel   739 May  5 02:57 Cargo.toml
+-rw-r--r--   1 jeldonmusic  wheel   373 Apr 10 10:23 README.md
+drwxr-xr-x@  3 jeldonmusic  wheel    96 May  5 01:41 capabilities
+drwxr-xr-x  18 jeldonmusic  wheel   576 Apr 10 10:23 icons
+drwxr-xr-x   3 jeldonmusic  wheel    96 May  5 01:21 pages
+drwxr-xr-x   3 jeldonmusic  wheel    96 Apr 10 10:16 permissions
+drwxr-xr-x   6 jeldonmusic  wheel   192 Apr 10 10:25 schemas
+drwxr-xr-x   7 jeldonmusic  wheel   224 May  2 16:23 services
+drwxr-xr-x  10 jeldonmusic  wheel   320 May  5 00:59 src-tauri
+drwxr-xr-x@  5 jeldonmusic  wheel   160 May  3 19:47 target
+-rw-r--r--@  1 jeldonmusic  wheel  6330 May  5 00:51 tauri_tree.txt
+
+filecoin-rs/pkg:
+total 528
+drwxr-xr-x   9 jeldonmusic  wheel     288 May  1 03:33 .
+drwxr-xr-x  11 jeldonmusic  wheel     352 May  6 23:27 ..
+-rw-r--r--   1 jeldonmusic  wheel       1 May  1 03:33 .gitignore
+-rw-r--r--   2 jeldonmusic  wheel       0 Apr 30 18:20 README.md
+-rw-r--r--   2 jeldonmusic  wheel    1509 May  5 03:03 filecoin_rs.d.ts
+-rw-r--r--   2 jeldonmusic  wheel   21099 May  5 03:03 filecoin_rs.js
+-rw-r--r--   2 jeldonmusic  wheel  225710 May  1 03:33 filecoin_rs_bg.wasm
+-rw-r--r--   1 jeldonmusic  wheel    2747 May  1 03:33 filecoin_rs_bg.wasm.d.ts
+-rw-r--r--   2 jeldonmusic  wheel     475 May  5 03:03 package.json
+
+filecoin-rs/src:
+total 40
+drwxr-xr-x  16 jeldonmusic  wheel   512 May  3 23:37 .
+drwxr-xr-x  11 jeldonmusic  wheel   352 May  6 23:27 ..
+drwxr-xr-x   2 jeldonmusic  wheel    64 Apr 10 03:47 _middlerware_
+-rw-r--r--   1 jeldonmusic  wheel  3711 Apr  6 17:23 actor_state.rs
+drwxr-xr-x  11 jeldonmusic  wheel   352 May  3 12:12 agent
+drwxr-xr-x   4 jeldonmusic  wheel   128 Apr 29 20:36 dao
+-rw-r--r--@  1 jeldonmusic  wheel  3768 May  5 10:56 lib.rs
+-rw-r--r--   1 jeldonmusic  wheel   152 Apr  6 17:23 limiter.rs
+-rw-r--r--@  1 jeldonmusic  wheel  2824 May  3 13:02 main.rs
+-rw-r--r--   1 jeldonmusic  wheel   523 Apr  6 17:23 messages.rs
+drwxr-xr-x   3 jeldonmusic  wheel    96 Apr 29 20:36 native
+drwxr-xr-x   3 jeldonmusic  wheel    96 Apr  9 23:36 permissions
+drwxr-xr-x   3 jeldonmusic  wheel    96 Apr  6 17:23 provenance
+drwxr-xr-x   4 jeldonmusic  wheel   128 Apr 29 20:36 server
+drwxr-xr-x   4 jeldonmusic  wheel   128 Apr  6 17:23 storage
+drwxr-xr-x   3 jeldonmusic  wheel    96 Apr  6 17:23 wasm
+
+filecoin-rs/target:
+total 16
+drwxr-xr-x@  5 jeldonmusic  wheel   160 May  6 20:21 .
+drwxr-xr-x  11 jeldonmusic  wheel   352 May  6 23:27 ..
+-rw-r--r--   1 jeldonmusic  wheel  1694 May  6 20:23 .rustc_info.json
+-rw-r--r--   1 jeldonmusic  wheel   177 May  6 20:21 CACHEDIR.TAG
+drwxr-xr-x   8 jeldonmusic  wheel   256 May  6 20:21 debug
+
+python/handlers:
+total 8
+drwxr-xr-x  4 jeldonmusic  wheel  128 Apr 10 04:58 .
+drwxr-xr-x  4 jeldonmusic  wheel  128 May  5 00:12 ..
+-rw-r--r--  1 jeldonmusic  wheel  831 Apr 10 03:46 handler.py
+-rw-r--r--  1 jeldonmusic  wheel    0 Apr 10 04:58 requirements.txt

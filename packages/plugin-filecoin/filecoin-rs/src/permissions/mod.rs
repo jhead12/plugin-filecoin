@@ -255,3 +255,8 @@ mod tests {
         assert!(updated_user.can_access(&Permission::ALL));
     }
 }
+async fn update_access(_id: String, _access: web::Json<Access>) -> HttpResponse {
+    logDebug("Updating access permissions");
+    // Add access update logic here
+    HttpResponse::Ok().finish()
+}

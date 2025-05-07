@@ -4,6 +4,8 @@ use std::collections::HashMap;
 use std::convert::TryFrom;
 use wasm_bindgen::prelude::*;
 use std::hash::{Hash, Hasher};
+mod agent;
+
 
 #[allow(dead_code)]
 struct DataRecord {
@@ -126,6 +128,12 @@ fn run_native() {
 }
 
 fn main() {
+        // Initialize logs with telemetry
+        agent::logs::init_logs();
+
+        // Example usage of logging functions
+        agent::logs::log_info("Application started");
+        agent::logs::log_debug("This is a debug message");
     run_native();
 }
 
